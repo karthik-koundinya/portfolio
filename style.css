@@ -53,14 +53,23 @@ p{
     align-items: center;
     justify-content: center;
     height: 70vh;
-    padding-top: 60px;
+    padding-top: 15%;
 }
 
-.profile-photo {
+/* .profile-photo {
     max-width: 150px;
     height: auto;
     border-radius: 50%;
+} */
+
+.profile-photo {
+  width: 150px; /* Define a specific width */
+  height: 150px; /* Define a specific height, adjust as necessary */
+  border-radius: 50%; /* Keeps the round shape */
+  object-fit: cover; /* This will cover the area, use 'contain' if you want the whole image without cropping */
+  overflow: hidden; /* Hides parts of the image overflowing the container */
 }
+
 
 .landing-content {
     padding: 20px;
