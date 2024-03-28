@@ -81,16 +81,18 @@ p{
 
 .resume-download {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-
+  margin: 20px auto; /* Centered horizontally and 20px margin at the top */
   padding: 10px 20px;
   background-color: #89b2b7; /* Darker shade for the button */
   color: #e5eaec; /* Text color */
   text-decoration: none; /* Removes the underline from the link */
   border-radius: 5px; /* Optional: if you want rounded corners */
   transition: background-color 0.3s; /* Smooth transition for background color */
+  font-size: 1rem; /* Adjust the font size as necessary */
+  border: none; /* Removes border if there is one */
+  cursor: pointer; /* Changes cursor to pointer when hovering over the button */
 }
+
 
 .resume-download:hover {
   background-color: #0056b3; /* Change to your preferred hover background color */
@@ -122,6 +124,7 @@ h3{
 .work-experience {
   width: 100%;
   padding: 50px 0;
+  margin-top: 100px;
   background-color: #0A192F; /* Match the background with your landing page */
   color: #CCD6F6;
   text-align: center;
