@@ -1,434 +1,238 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0A192F; /* Dark navy blue background */
-    color: #CCD6F6; /* Light grey-blue text for readability */
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #71abab; /* Assuming this was your original background color */
+  text-align: center; /* Center aligning text by default */
+  font-size: 16px; /* Base font size */
 }
 
-body{
-  font-family: 'Lato', sans-serif;
+.content{
+  text-align: center;
 }
 
-html {
-  scroll-behavior: smooth;
+.landing-content{
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center; /* Ensure container content is center aligned */
 }
 
-p{
-  text-align: justify;
+/* Container Styles */
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center; /* Ensure container content is center aligned */
 }
 
-.top-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    background-color: rgba(10, 25, 47, 0.85); /* Slightly transparent dark navy for nav */
-    z-index: 1000;
+/* Header Styles */
+header {
+  background: #71abab; /* Reverting to the original background color */
+  padding: 20px 0;
+  text-align: center; /* Center aligning header content */
 }
 
 .top-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
 }
 
 .top-nav ul li {
-    margin-left: 20px;
-    font-family: 'Lato', sans-serif;
+  margin: 0 15px;
 }
 
 .top-nav ul li a {
-    text-decoration: none;
-    color: #CCD6F6; /* Lighter text color for contrast */
-    font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1em; /* Responsive font size */
 }
 
-.landing-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-    padding-top: 15%;
+/* Landing Section Styles */
+#landing {
+  /* padding: 100px 20px; */
+  text-align: center; /* Center aligning landing section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-/* .profile-photo {
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
-} */
-
-.profile-photo {
-  width: 150px; /* Define a specific width */
-  height: 150px; /* Define a specific height, adjust as necessary */
-  border-radius: 50%; /* Keeps the round shape */
-  object-fit: cover; /* This will cover the area, use 'contain' if you want the whole image without cropping */
-  overflow: hidden; /* Hides parts of the image overflowing the container */
-}
-
 
 .landing-content {
-    padding: 20px;
+  width: 100%;
+  max-width: 800px; /* Limit the width for better readability */
+  text-align: center; /* Ensure text is center aligned */
 }
 
-/* .resume-download {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #112240; /* Darker shade for the button */
-    /* color: #CCD6F6;  */
-    /* Text color */
-    /* text-decoration: none; */
-    /* border-radius: 5px; */
-    /* border: 2px solid #CCD6F6; Adding a border to make it pop */
-/* } */
-
-
-.resume-download {
-  display: inline-block;
-  margin: 20px auto; /* Centered horizontally and 20px margin at the top */
-  padding: 10px 20px;
-  background-color: #89b2b7; /* Darker shade for the button */
-  color: #e5eaec; /* Text color */
-  text-decoration: none; /* Removes the underline from the link */
-  border-radius: 5px; /* Optional: if you want rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for background color */
-  font-size: 1rem; /* Adjust the font size as necessary */
-  border: none; /* Removes border if there is one */
-  cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+.profile-photo {
+  width: 150px;
+  border-radius: 50%;
 }
-
-
-.resume-download:hover {
-  background-color: #0056b3; /* Change to your preferred hover background color */
-  color: #cccccc; /* Change to your preferred hover text color */
-}
-
 
 h1 {
-    color: #CCD6F6; /* Ensuring readability against the dark background */
-    font-family: 'Roboto', sans-serif;
+  font-size: 2em; /* Responsive font size */
 }
 
-h2{
-  font-family: 'Roboto', sans-serif;
+p {
+  font-size: 1em; /* Responsive font size */
 }
 
-h3{
-  font-family: 'Roboto', sans-serif;
-}
-
-/* p{
-  font-family: 'Roboto', sans-serif;
-} */
-
-
-
-/* ... your existing CSS code ... */
-
+/* Experience Section Styles */
 .work-experience {
-  width: 100%;
-  padding: 50px 0;
-  margin-top: 100px;
-  background-color: #0A192F; /* Match the background with your landing page */
-  color: #CCD6F6;
-  text-align: center;
-}
-
-.work-experience h2 {
-  color: #CCD6F6;
-  margin-bottom: 20px;
+  background: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center; 
+  /* Center aligning work experience section */
 }
 
 .timeline {
-  position: relative;
-  max-width: 60%;
-  margin: 40px auto;
-  padding-top: 20px; /* Adjust top padding as needed */
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 40px; /* Align with the center of the circles */
-  top: 0;
-  bottom: 20px; /* Adjust bottom value as needed */
-  width: 2px;
-  background: #ccd6f6; /* Line color */
-  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .timeline-event {
-  position: relative;
-  padding-left: 80px; /* Left padding to accommodate the timeline line and circles */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center; /* Center aligning timeline events */
 }
 
-.timeline-event:before {
-  content: '';
-  position: absolute;
-  left: 41px; /* Adjust this value so the circle's center aligns with the timeline line */
-  top: 10px; /* Adjust this value so it is at the top of the text */
-  width: 14px; /* Circle size */
-  height: 14px; /* Circle size */
-  margin-top: -7px; /* Half the height of the circle to center it on the line */
-  margin-left: -7px; /* Half the width of the circle to center it on the line */
-  background: #ccd6f6; /* Circle color */
-  border-radius: 50%;
-  z-index: 2; /* Ensure the circle is above the line */
-}
-
-
-.date {
-  color: #CCD6F6;
+.timeline-event .date {
   font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
   margin-bottom: 5px;
-  text-align: left;
+  font-size: 1.1em; /* Responsive font size */
 }
 
-.content {
-  background-color: #112240;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 22px;
-  color: #CCD6F6;
-  text-align: left;
-  width: 100%;
-}
-
-/* ... any other CSS you may add ... */
-
-
-
-
+/* Projects Section Styles */
 .projects-section {
-  width: 100%;
-  padding: 50px 0;
-  background-color: #0A192F; /* Matching the dark theme */
-  color: #CCD6F6; /* Light text color */
-  text-align: center;
+  background: #71abab;
+  padding: 50px 20px;
+  /* text-align: center;  */
+  /* Center aligning projects section */
 }
 
-.projects-section h2 {
-  color: #CCD6F6;
-  margin-bottom: 30px;
-}
-
-.projects-container {
-  max-width: 50%; /* Using 50% of the viewport width */
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centering the project cards */
-  gap: 20px; /* Space between projects */
-}
+/* .projects-container{
+  background: #f0f0f0;
+  text-align: justify;  
+  /* Center aligning work experience section */
+/* }  */
 
 .project-item {
-  width: 100%; /* Full width of the container */
-  background-color: #112240; /* Darker background for each item */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
-  margin-bottom: 20px; /* Space between project items */
-}
-
-.project-item h3 {
-  color: #64ffda; /* A lighter accent color for project titles */
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
 }
 
 .project-item p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  text-align: justify;
 }
 
-.project-item a.website {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 10px 15px;
-  background-color: #64ffda; /* Accent color */
-  color: #0A192F; /* Dark text for contrast */
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+.project-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em; /* Responsive font size */
 }
 
-.project-item a.website:hover {
-  background-color: #52debf; /* Darker accent color on hover */
-}
-
-.project-item a.gatech-github {
-  color: #f3f6f5; /* Darker accent color on hover */
-}
-
-.project-item img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  border-radius: 5px; /* Optional: for styled image edges */
-  margin-top: 15px;
+.project-item p {
+  margin-bottom: 10px;
+  font-size: 1em; /* Responsive font size */
 }
 
 .image-list {
-  display: flex; /* Aligns children (images) in a row */
-  justify-content: center; /* Centers the images horizontally */
-  align-items: center; /* Aligns the images vertically in the center */
-  gap: 10%; /* Adds some space between the images */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center aligning images */
 }
 
 .image-list img {
-  width: 100%; /* Sets the width of each image to 50% of the parent container */
-  max-width: 300px; /* Optionally, limits the maximum width of each image */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact-section {
   width: 100%;
-  padding: 50px 0;
-  background-color: #0A192F;
-  color: #CCD6F6;
-  text-align: center;
-}
-
-.contact-section h2 {
-  color: #CCD6F6;
-  margin-bottom: 30px;
-}
-
-.contact-information p, .contact-information a {
-  color: #CCD6F6;
-  margin-bottom: 10px;
-}
-
-.contact-form form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
+  max-width: 300px;
   border-radius: 5px;
-  margin-top: 10px;
 }
 
-.contact-form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #64ffda;
-  color: #0A192F;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #52debf;
-}
-
-/* Ensure placeholders have a lighter color for visibility */
-::placeholder {
-  color: #CCD6F6;
-  opacity: 0.7; /* Placeholder text opacity */
-}
-
-/* Focus styles for form inputs */
-input:focus, textarea:focus {
-  border: 2px solid #64ffda;
-}
-
-
-
-
+/* Contact Section Styles */
 .contact-section {
-  width: 100%;
-  padding: 50px 0;
-  background-color: #0A192F;
-  color: #CCD6F6;
-  text-align: center;
+  background: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center; /* Center aligning contact section */
 }
 
-.contact-section h2 {
-  color: #CCD6F6;
-  margin-bottom: 30px;
-}
-
-.contact-information a.contact-link {
+.contact-link {
   display: inline-block;
   margin: 0 10px;
-  color: #CCD6F6;
-  font-size: 24px; /* Adjust the size of the icons */
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
 }
 
-.contact-information a.contact-link:hover {
-  color: #64ffda;
-  transform: translateY(-5px);
-  transition: transform 0.3s ease-in-out;
-}
-
-/* ... rest of your CSS ... */
-
-
-.personal-notice-section {
-  background-color: rgba(75, 67, 67, 0.05); /* Slightly lighter than the background for subtle contrast */
-  color: #ffffff; /* White text color for readability */
-  text-align: center; /* Center-align the text */
-  padding: 15px; /* Add some padding */
-  font-family: Arial, sans-serif; /* A clean, sans-serif font */
-  font-size: 0.9em;
-  width: 70%; /* Set the width to 70% of the container */
-  margin: 20px auto; /* Centers the section horizontally with auto margins */
-  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-}
-
-
-
-
+/* Footer Styles */
 .footer-container {
-  background-color: rgba(63, 61, 61, 0.05); /* Slightly lighter than the background for subtle contrast */
-  color: #ffffff; /* White text color for readability */
-  text-align: center; /* Center-align the text */
-  padding: 15px 0; /* Add some padding */
-  font-family: Arial, sans-serif; /* A clean, sans-serif font */
-  font-size: 0.9em; /* Slightly smaller font size */
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.footer-container footer p {
-  margin: 0; /* Remove default margins from the paragraph */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px; /* Adjusting base font size for smaller screens */
+  }
+
+  .top-nav ul {
+      flex-direction: column;
+  }
+
+  .profile-photo {
+      width: 100px;
+  }
+
+  h1 {
+      font-size: 1.8em; /* Adjusting h1 font size for smaller screens */
+  }
+
+  .timeline-event .date {
+      font-size: 1em; /* Adjusting date font size for smaller screens */
+  }
+
+  .project-item h3 {
+      font-size: 1.3em; /* Adjusting project heading font size for smaller screens */
+  }
+
+  .project-item p {
+      font-size: 0.9em; /* Adjusting project paragraph font size for smaller screens */
+  }
+
+  .contact-link {
+      font-size: 1.2em; /* Adjusting contact link font size for smaller screens */
+  }
+
+  .image-list {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
-.footer-container footer a {
-  color: #ffffff; /* Ensures the link is also white */
-  text-decoration: none; /* No underline for a cleaner look */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
+@media (max-width: 480px) {
+  body {
+      font-size: 12px; /* Further adjusting base font size for very small screens */
+  }
 
-.footer-container footer a:hover {
-  color: #bbbbbb; /* A lighter grey for when the link is hovered over */
+  .top-nav ul li {
+      margin: 10px 0;
+  }
+
+  h1 {
+      font-size: 1.5em; /* Further adjusting h1 font size for very small screens */
+  }
+
+  .project-item p {
+      font-size: 0.8em; /* Further adjusting project paragraph font size for very small screens */
+  }
+
+  .contact-link {
+      font-size: 1em; /* Further adjusting contact link font size for very small screens */
+  }
 }
